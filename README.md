@@ -1,7 +1,0 @@
-﻿Laboratorio 1
-Configuracion de entorno y control de versiones (Git y GitHub)
-Robertino Klug
-Curza-10268
-3903
-11/08/26
-https://github.com/Robertino512/peylw-2026-practicos-klug-3903-68

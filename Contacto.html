@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--klug-3903-68-->
+
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de </a></li> 
+                <li><a href="Contacto.html"> Contacto</a></li>    
+                
+            </ul>
+        </nav>
+    </header>
+<main>
+<section>
+    <h2>Seccion de contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required maxlength="20">
+        <label for="email">Correo electronico:</label>
+        <input type="email" id="email" required>
+        <label for="Telefono">Telefono:</label>
+        <input type="tel" id="Telefono" required placeholder="Ej: +54 2920 123456">
+        <label for="mensaje">Edad:</label>
+        <input type="number" id="mensaje" required min="16" max="120">
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion">
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" list="provincias">
+        <datalist id="provincias">
+            <option value="Chubut">
+            <option value="La Pampa">
+            <option value="Neuquén">
+            <option value="Río Negro">
+            <option value="Tierra del Fuego">
+            <option value="Santa Cruz">  
+            </datalist>
+        <label for="codigo postal">Codigo Postal:</label>
+        <input type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required>  
+        <label for="metodo de contacto">Metodo de contacto preferido:</label>
+        <input type="radio" id="correo electronico" name="correo electronico" value="Correo electronico" checked>
+        <label for="correo electronico">Correo electronico</label>  
+        <input type="radio" id="correopost" name="correo postal">
+        <label for="correopost">Correo postal</label>
+        <input type="radio" id="telefono" name="telefono">
+        <label for="telefono">Telefono</label>
+        <label for="suscripcion de interes">Suscripción de interes:</label>     
+        <input type="checkbox" id="suscripcion de interes">
+        <datalist id="suscripciones">
+            <option value="Noticias">
+            <option value="Promociones">
+            <option value="Alertas" checked>
+            <option value="Eventos">
+            </datalist>
+        <button type="submit" id="btn-cargar-klug-3903-68">Cargar</button>
+    </form>
+</section>
+<table>
+
+        <tr>
+            <td>Nombre</td>
+            <td>Correo electronico</td>
+            <td>Telefono</td>
+            <td>Edad</td>
+            <td>Direccion</td>
+            <td>Provincia</td>
+            <td>Codigo Postal</td>
+            <td>Metodo de contacto preferido</td>
+            <td>Suscripción de interes</td>
+        </tr>
+        
+    <tbody id="tabla-datos">
+    </tbody>
+</main>
+
+
+
+
+</body>
+ 
+
+
+
+
+</html>
+

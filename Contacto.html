@@ -45,14 +45,14 @@
             <option value="Santa Cruz">  
             </datalist>
         <label for="codigo postal">Codigo Postal:</label>
-        <input type="number" id="codigo postal" required pattern="^[A-Z]\d{4}[A-Z]{3}$." title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF">  
+        <input type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required>  
         <label for="metodo de contacto">Metodo de contacto preferido:</label>
-        <input type="radio" id="metodo de contacto" list="metodos">
-        <datalist id="metodos">
-            <option value="Codigo postal">
-            <option value="Telefono">
-            <option value="Correo electronico" checked>
-        </datalist>
+        <input type="radio" id="metodo de contacto" name="metodo" value="Correo electronico" checked>Correo electronico
+        <label for="metodo de contacto">Correo electronico</label>
+        <input type="radio" id="correopost" name="correo postal">
+        <label for="correopost">Correo postal</label>
+        <input type="radio" id="telefono" name="telefono">
+        <label for="telefono">Telefono</label>
         <label for="suscripcion de interes">Suscripción de interes:</label>     
         <input type="checkbox" id="suscripcion de interes">
         <datalist id="suscripciones">

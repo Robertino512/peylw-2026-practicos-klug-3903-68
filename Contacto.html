@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div id="top"></div>
+    <header class="header">
         <h1>Portal de Robertino Klug token: klug-3903-68</h1>
         <nav>
             <ul>
@@ -21,24 +22,24 @@
             </ul>
         </nav>
     </header>
-<main>
+<main class="main">
 <section>
     <h2>Seccion de contacto</h2>
     <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required maxlength="20">
+        <input class="campoFormulario" type="text" id="nombre" required maxlength="20">
         <label for ="apellido"> Apellido</label>
         <input type="text" id="apellido" required maxlength="20">
         <label for="email">Correo electronico:</label>
-        <input type="email" id="email" required>
+        <input class="campoFormulario" type="email" id="email" required>
         <label for="Telefono">Telefono:</label>
-        <input type="tel" id="Telefono" required placeholder="Ej: +54 2920 123456">
+        <input class="campoFormulario" type="tel" id="Telefono" required placeholder="Ej: +54 2920 123456">
         <label for="mensaje">Edad:</label>
-        <input type="number" id="mensaje" required min="16" max="120">
+        <input class="campoFormulario" type="number" id="mensaje" required min="16" max="120">
         <label for="direccion">Direccion:</label>
-        <input type="text" id="direccion">
+        <input class="campoFormulario" type="text" id="direccion">
         <label for="provincia">Provincia:</label>
-        <input type="text" id="provincia" list="provincias">
+        <input class="campoFormulario" type="text" id="provincia" list="provincias">
         <datalist id="provincias">
             <option value="Chubut">
             <option value="La Pampa">
@@ -48,28 +49,28 @@
             <option value="Santa Cruz">  
             </datalist>
         <label for="codigo postal">Codigo Postal:</label>
-        <input type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required>  
+        <input class="campoFormulario" type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required>  
         <label for="metodo de contacto">Metodo de contacto preferido:</label>
-        <input type="radio" id="correo electronico" name="namegenerico" value="Correo electronico" checked>
+        <input class="campoFormulario" type="radio" id="correo electronico" name="namegenerico" value="Correo electronico" checked>
         <label for="correo electronico">Correo electronico</label>  
-        <input type="radio" id="correopost" name="namegenerico">
+        <input class="campoFormulario" type="radio" id="correopost" name="namegenerico">
         <label for="correopost">Correo postal</label>
-        <input type="radio" id="telefono" name="namegenerico">
+        <input class="campoFormulario" type="radio" id="telefono" name="namegenerico">
         <label for="telefono">Telefono</label>
         <label for="suscripcion de interes">Suscripción de interes:</label>     
-        <input type="checkbox" id="noticias" name= suscripcion value="noticias">
+        <input class="campoFormulario"  type="checkbox" id="noticias" name= suscripcion value="noticias">
         <label for = "noticias"> Noticias </label>
         <input type="checkbox" id="eventos" name= suscripcion value="eventos">
         <label for = "eventos"> Eventos </label>
-        <input type="checkbox" id="promociones" name= suscripcion value="promociones">
+        <input class="campoFormulario" type="checkbox" id="promociones" name= suscripcion value="promociones">
         <label for = "promociones"> Promociones </label>
-         <input type="checkbox" id="alertas" name= suscripcion value="alertas" checked>
+         <input class="campoFormulario" type="checkbox" id="alertas" name= suscripcion value="alertas" checked>
         <label for = "alertas">Alertas  </label>
         
         <button type="submit" id="btn-cargar-klug-3903-68">Cargar</button>
     </form>
 </section>
-<table>
+<table class="tablaGeneral">
     <thead>
         <th>campo</th>
         <th>datos</th>
@@ -78,6 +79,8 @@
 
         <tr>
             <td>Nombre</td>
+            <td>Juan</td>
+            <td>Jose</td>
             <td id="resumen-nombre"</td>
         </tr>
         <tr>
@@ -125,6 +128,7 @@
 <footer>
         <p>&copy; 2026 ROBERTINO KLUG . CURZAS - UNCo, Viedma, Río Negro. TOKEN-ALUMNO: Klug-3903-68  </p>
 </footer>
+<a href="#top" class="botonInicio">▲</a>
 </body>
  
 

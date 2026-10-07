@@ -1,4 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+<!-- Codigo HSl del violeta: hsl(270, 100%, 50%) Token identificador: klug-3903-68 -->
+
 .body {
-    font-family: sans-serif;
+    font-family: "Outfit" , sans-serif;
     background-color: #f8f8fd;
+
+}
+.tablaGeneral{
+width:100%;
+border-collapse: collapse;
+
+}
+
+.tablaGeneral th {
+
+color: hsl(270, 100%, 50%);
+}
+
+.tablaGeneral td{
+     
+    padding: 8px;
+    
+}
+.tablaGeneral table, th, td{
+    border: 1px solid black;
+}
+
+.tablaGeneral tr:nth-child(even) {
+    background-color: hsl(270, 30%, 90%);
+}
+
+.campoFormulario{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.campoFormulario:focus {
+    outline: none;
+    border-color: hsl(270, 100%, 50%);
+}       
+
+.header {
+    position: fixed; top: 0; width: 100%; z-index: 1000;
+}
+.main{
+    padding-top: 15px; 
+}
+.H2{
+    position: sticky; top: 0; background-color: hsl(270, 100%, 50%); z-index: 10;
+}
+.cajaBio{
+    max-height: 300px; overflow-y: auto;
+}
+.botonInicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: hsl(270, 100%, 50%);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }

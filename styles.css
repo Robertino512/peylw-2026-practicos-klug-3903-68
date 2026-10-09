@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-<!-- Codigo HSl del violeta: hsl(270, 100%, 50%) Token identificador: klug-3903-68 -->
+/* Codigo HSl del violeta: hsl(270, 100%, 50%) Token identificador: klug-3903-68 */
 
 .body {
     font-family: "Outfit" , sans-serif;
     background-color: #f8f8fd;
-
 }
 .tablaGeneral{
 width:100%;
@@ -43,6 +42,9 @@ color: hsl(270, 100%, 50%);
 
 .header {
     position: fixed; top: 0; width: 100%; z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .main{
     padding-top: 15px; 
@@ -58,12 +60,49 @@ color: hsl(270, 100%, 50%);
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: hsl(270, 100%, 50%);
     color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+
+.logo{
+transition: transform 1s ease-in-out;
+width: 150px;
+    
+}
+
+.logo:hover{
+    transform: rotateY(360deg);
+}
+
+.claseUL{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+.tabla_contenedor {
+    overflow-x: auto;
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
 }

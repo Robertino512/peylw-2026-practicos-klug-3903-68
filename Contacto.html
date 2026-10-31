@@ -29,19 +29,26 @@
     <form>
         <label for="nombre">Nombre:</label>
         <input class="campoFormulario" type="text" id="nombre" required maxlength="20">
+
         <label for ="apellido"> Apellido</label>
         <input type="text" id="apellido" required maxlength="20">
+
         <label for="email">Correo electronico:</label>
         <input class="campoFormulario" type="email" id="email" required>
-        <label for="Telefono">Telefono:</label>
+
+        <label for="telefono">Telefono:</label>
         <input class="campoFormulario" type="tel" id="Telefono" required placeholder="Ej: +54 2920 123456">
-        <label for="mensaje">Edad:</label>
-        <input class="campoFormulario" type="number" id="mensaje" required min="16" max="120">
+
+        <label for="edad">Edad:</label>
+        <input class="campoFormulario" type="number" id="edad" required min="16" max="120">
+
         <label for="direccion">Direccion:</label>
         <input class="campoFormulario" type="text" id="direccion">
+
         <label for="provincia">Provincia:</label>
         <input class="campoFormulario" type="text" id="provincia" list="provincias">
-        <datalist id="provincias">
+
+        <datalist id="provincia">
             <option value="Chubut">
             <option value="La Pampa">
             <option value="Neuquén">
@@ -49,24 +56,38 @@
             <option value="Tierra del Fuego">
             <option value="Santa Cruz">  
             </datalist>
+
         <label for="codigo postal">Codigo Postal:</label>
-        <input class="campoFormulario" type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required>  
-        <label for="metodo de contacto">Metodo de contacto preferido:</label>
-        <input class="campoFormulario" type="radio" id="correo electronico" name="namegenerico" value="Correo electronico" checked>
+        <input class="campoFormulario" type="text" id="codigo postal"  pattern="^[A-Z]\d{4}[A-Z]{3}$" title="Formato requerido: una letra mayúscula, cuatro dígitos, y tres letras mayúsculas" placeholder="ej: R8500AAF" required> 
+        
+        
+        <label >Metodo de contacto preferido:</label>
+        
         <label for="correo electronico">Correo electronico</label>  
-        <input class="campoFormulario" type="radio" id="correopost" name="namegenerico">
+        <input class="campoFormulario" type="radio" id="correo electronico" name="metodoContacto" value="Correo electronico" checked>
+        
         <label for="correopost">Correo postal</label>
-        <input class="campoFormulario" type="radio" id="telefono" name="namegenerico">
+        <input class="campoFormulario" type="radio" id="correopost" name="metodoContacto">
+
+        
         <label for="telefono">Telefono</label>
-        <label for="suscripcion de interes">Suscripción de interes:</label>     
-        <input class="campoFormulario"  type="checkbox" id="noticias" name= suscripcion value="noticias">
+        <input class="campoFormulario" type="radio" id="telefono" name="metodoContacto">
+
+        <label >Suscripción de interes:</label> 
+        
+        
         <label for = "noticias"> Noticias </label>
-        <input type="checkbox" id="eventos" name= suscripcion value="eventos">
+        <input class="campoFormulario"  type="checkbox" id="noticias" name=suscripcion value="noticias">
+
+        
         <label for = "eventos"> Eventos </label>
-        <input class="campoFormulario" type="checkbox" id="promociones" name= suscripcion value="promociones">
+        <input type="checkbox" id="eventos" name=suscripcion value="eventos">
+        
         <label for = "promociones"> Promociones </label>
-         <input class="campoFormulario" type="checkbox" id="alertas" name= suscripcion value="alertas" checked>
+        <input class="campoFormulario" type="checkbox" id="promociones" name=suscripcion value="promociones">
+         
         <label for = "alertas">Alertas  </label>
+        <input class="campoFormulario" type="checkbox" id="alertas" name=suscripcion value="alertas" checked>
         
         <button type="submit" id="btn-cargar-klug-3903-68">Cargar</button>
     </form>
@@ -74,15 +95,22 @@
 <div class="tabla_contenedor">
 <table class="tablaGeneral">
     <thead>
-        <th>campo</th>
-        <th>datos</th>
+        <tr>
+            <th>Campo</th>
+            <th>Datos</th>
+        </tr>
     </thead>
     <tbody>
 
         <tr>
             <td>Nombre</td>
-            <td id="resumen-nombre"</td>
+            <td id="resumen-nombre"></td>
         </tr>
+        <tr>
+            <td>Apellido</td>
+            <td id="resumen-apellido"></td>
+        </tr>
+
         <tr>
             <td>Correo electronico</td>
             <td id="resumen-correo electronico"></td>
@@ -114,7 +142,7 @@
         </tr>
         <tr>
             <td>Suscripción de interes</td>
-            <td id="resumen-suscripción de interes"></td>
+            <td id="resumen-suscripcion"></td>
         </tr>
             
         
@@ -129,9 +157,8 @@
         <p>&copy; 2026 ROBERTINO KLUG . CURZAS - UNCo, Viedma, Río Negro. TOKEN-ALUMNO: Klug-3903-68  </p>
 </footer>
 <a href="#top" class="botonInicio">▲</a>
+<script src="script.js"></script>
 </body>
  
-
-
 </html>
 

@@ -73,7 +73,7 @@ color: hsl(270, 100%, 50%);
 
 .logo{
 transition: transform 1s ease-in-out;
-width: 150px;
+width: 100px;
     
 }
 
@@ -105,4 +105,8 @@ width: 150px;
 nav {
     position: relative;
     z-index: 9999;
+}
+
+.cv-completo{
+display: none;
 }

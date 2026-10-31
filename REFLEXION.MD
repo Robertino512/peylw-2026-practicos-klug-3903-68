@@ -1,7 +1,12 @@
-1) Codigo utilizado para la animacion del logo: .logo:hover{
-    transform: rotateY(360deg);
-}
+1) El fragmento para validar que utilice es este: if (edad.value < 18 && edad.value !== "") {
+        edadTD.style.backgroundColor = "#ff0000";
+        edadTD.innerText = edad.value + " (Menor de edad)";
+    } else {
+        edadTD.style.backgroundColor = "";
+        edadTD.innerText = edad.value;
+    }
+});
 
-2)Es necesario definir un brackground color para ese elemento ya que si no lo hacemos, puede que el contenido de fondo pueda seguir viendose por detras del contenido que deseamos que sea visible mientras nos desplazamos por el sitio web
+2) utilizamos el evento input para los campos de texto ya que permite que se actualize la informacion de el campo en tiempo real, ya sea cuando el usuario borre o escriba una nueva letra. en cambio change lo usamos para cuando necesitamos confirmar el dato, como en un checkbox o radio
 
-3) cuando abrimos el sitio web en una pantalla menor a 768px, los enlaces de navegacion aparecen en vertical (distinto de cuando abrimos el sitio en pc, estos aparecen en vertical debido a la clase "claseUL" aplicada). Ademas de eso, las tablas tambien se adaptan para permitir navegar verticalmente y que no se "corten"
+3) como lo explique en el comentario el script, hice un condicional por evento, para confirmar si estabamos parados sobre la pagina correcta, en otras palabras, los condicionales que agregue funcionan como un: si existe esta constante y esta, entonces ejecuta esto, y sino pasa al siguiente. Si el primer condicional dio false, por consecuencia todos los eventos daran false, ya que entre paginas no compartimos elementos ni funcionalidades. hasta que llega al condicional del boton leer mas, que dara true.

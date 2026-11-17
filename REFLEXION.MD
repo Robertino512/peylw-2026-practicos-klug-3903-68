@@ -1,12 +1,17 @@
-1) El fragmento para validar que utilice es este: if (edad.value < 18 && edad.value !== "") {
-        edadTD.style.backgroundColor = "#ff0000";
-        edadTD.innerText = edad.value + " (Menor de edad)";
+1)La opcion de juego que seleccione fue la de adivinanzas de numeros, ya que me gusta hacer uso de condicionales.
+
+
+2) en este fragmento de codigo hago uso del almacenamiento local del navegador implementando la lectura y escritura del récord 
+
+let record = localStorage.getItem('record');
+function actualizar_record() {
+    if (record === null || intentos < Number(record)) {
+        localStorage.setItem('record', intentos);
+        record = localStorage.getItem('record');
+        mostrar_record.textContent = 'Récord: ' + record;
     } else {
-        edadTD.style.backgroundColor = "";
-        edadTD.innerText = edad.value;
+        mostrar_record.textContent = 'Récord: ' + record;
     }
-});
+}
 
-2) utilizamos el evento input para los campos de texto ya que permite que se actualize la informacion de el campo en tiempo real, ya sea cuando el usuario borre o escriba una nueva letra. en cambio change lo usamos para cuando necesitamos confirmar el dato, como en un checkbox o radio
-
-3) como lo explique en el comentario el script, hice un condicional por evento, para confirmar si estabamos parados sobre la pagina correcta, en otras palabras, los condicionales que agregue funcionan como un: si existe esta constante y esta, entonces ejecuta esto, y sino pasa al siguiente. Si el primer condicional dio false, por consecuencia todos los eventos daran false, ya que entre paginas no compartimos elementos ni funcionalidades. hasta que llega al condicional del boton leer mas, que dara true.
+3) declare una variable global, pero es una variable que no muestra explicitamente su valor, sino que muestra como genera el numero secreto.

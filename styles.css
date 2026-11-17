@@ -3,7 +3,7 @@
 
 .body {
     font-family: "Outfit" , sans-serif;
-    background-color: #f8f8fd;
+    background-color: #f9f9f9;
 }
 .tablaGeneral{
 width:100%;
@@ -58,11 +58,11 @@ color: hsl(270, 100%, 50%);
 .botonInicio {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
     z-index: 999;
     width: 25px;
     height: 25px;
-    border-radius: 50%;
+    border-radius: 60%;
     background-color: hsl(270, 100%, 50%);
     color: white;
     text-decoration: none;
@@ -110,3 +110,7 @@ nav {
 .cv-completo{
 display: none;
 }
+.h1_juego{
+    text-align: center;
+}
+

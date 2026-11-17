@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body">
+    <div id="top"></div>
     <!-- TOKEN-ALUMNO: klug-3903-68 -->
-    <header>
+    <header class="header">
         <h1>Portal de Robertino Klug token: klug-3903-68</h1>
+        <img class="logo" src= "https://admin.curza.uncoma.edu.ar/wp-content/uploads/2021/09/Unco-banner.jpeg" alt="Logo CURZAS">
         </header>
         <nav>
-            <ul>
+            <ul class="claseUL">
                 <li><a href="index.html">Inicio </a></li>
                 <li><a href="acercade.html">Acerca de </a></li>
                 <li><a href="Contacto.html"> Contacto</a></li>
+                <li><a href="juego.html"> Juego</a></li>  
                 
             </ul>
         </nav>
@@ -23,16 +26,21 @@
         <main>
             <article>
                 <section>
-                    <H2> Sobre mi  </H2>
-                    <p> Soy Robertino Klug, un estudiante de la tecnicatura universitaria de desarrollo web de la universidad CURZAS.
-                         Me gusta la programacion, por que me permite entrenar mi cerebro logicamente, 
-                         lo cual me ayuda a resolver problemas de la vida real gracias a la lógica que se aplica en la programación.
-                        tambien me gusta el html y diseñar paginas, ya que es donde puedo volcar toda mi creatividad. </p>
-                
+                    <H2 > Sobre mi  </H2>
+                     <button id="btn-leer-mas-klug-3903-68">Leer más</button> 
+                    <div class="cv-completo">
+                        
+                        <p> Soy Robertino Klug, un estudiante de la tecnicatura universitaria de desarrollo web de la universidad CURZAS.
+                            Me gusta la programacion, por que me permite entrenar mi cerebro logicamente,
+                            lo cual me ayuda a resolver problemas de la vida real gracias a la lógica que se aplica en la programación.
+                            tambien me gusta el html y diseñar paginas, ya que es donde puedo volcar toda mi creatividad. </p>
+                    </div>
+                       
                 </section>
+                
                 <section>
-                    <H2>Mi pasado  </H2>
-                    <p> Estudie en la EESTN1 (Escuela Estudiantil Secundaria Técnica Nro 1) de patagones. A partir de cuarto año me interesé por la programación, 
+                    <H2 class="H2">Mi pasado  </H2>
+                    <p class="cajaBio"> Estudie en la EESTN1 (Escuela Estudiantil Secundaria Técnica Nro 1) de patagones. A partir de cuarto año me interesé por la programación, 
                         lo cual elegi la tecnicatura de Tecnico programador. 
                         Alli tuve materias como laboratorio de programacion, Sistemas operativos, Aplicaciones ofirmaticas (Excel, Word, Powerpoint) y desarrollo web,
                          que fue la materia que mas me intereso y el motivo por el cual estoy estudiando esta tecnicatura. </p>
@@ -55,6 +63,7 @@
     <footer>
         <p>&copy; 2026 ROBERTINO KLUG. CURZAS - UNCo, Viedma, Río Negro. TOKEN-ALUMNO: klug-3903-68  </p>
     </footer>
-
+<a href="#top" class="botonInicio">▲</a>
+<script src="script.js" defer ></script>
 </body>
 </html>

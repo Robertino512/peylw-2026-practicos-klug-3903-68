@@ -8,16 +8,36 @@ const telefono = document.getElementById("Telefono");
 const edad = document.getElementById("edad");
 const direccion = document.getElementById('direccion');
 const provincia = document.getElementById("provincia");
-const codigoPostal = document.getElementById("codigo postal");
+const codigoPostal = document.getElementById("codigo_postal");
 
 const metodosContacto = document.querySelectorAll(
     'input[name="metodoContacto"]'
+
 );
-const suscripcionInteres = document.querySelectorAll('input[name="suscripcion"]').forEach(cb => {
 
-    cb.addEventListener("change", actualizarSuscripciones);
+const suscripcionInteres = document.querySelectorAll('input[name="suscripcion"]');
 
-});
+
+
+function actualizarSuscripciones(){
+        const seleccionados= [];
+        suscripcionInteres.forEach(susc=>{
+            if (susc.checked===true) {
+                seleccionados.push(susc.value);
+                
+            }
+        })
+        suscripcionInteresTD.innerText=seleccionados.join(",");
+}
+    
+function actualizarMetodoContacto(){
+    metodosContacto.forEach(metodo1=>{
+    if (metodo1.checked===true){
+                metodosContactoTD.innerText = metodo1.value;
+            }
+        }); 
+}
+
 
 const nombreTD = document.getElementById("resumen-nombre");
 const apellidoTD = document.getElementById("resumen-apellido");
@@ -89,16 +109,22 @@ if (provincia && provinciaTD) {
     });
 }
 
-if (suscripcionInteres && suscripcionInteresTD) {
-    suscripcionInteres.addEventListener("change", function() {
-        suscripcionInteresTD.innerText = suscripcionInteres.value;
-    });
+if (suscripcionInteres.length>0 && suscripcionInteresTD) {
+    suscripcionInteres.forEach(cb => {
+
+    cb.addEventListener("change", actualizarSuscripciones);
+
+});
+    actualizarSuscripciones();
 }
 
 if (metodosContacto && metodosContactoTD) {
-    metodosContacto.addEventListener("change", function() {
-        metodosContactoTD.innerText = metodosContacto.value;
+        
+        metodosContacto.forEach(metodo=>{
+            metodo.addEventListener("change", actualizarMetodoContacto)
+        
     });
+    actualizarMetodoContacto()
 }
 
 const botonLeerMas = document.getElementById("btn-leer-mas-klug-3903-68");
@@ -186,7 +212,16 @@ function comprobar_num() {
         actualizar_intento();
     }
 }
-
+if (get_reiniciar && 
+    get_comprobar&&
+    get_intentos &&
+    get_numero&&
+    mostrar_mensaje&&
+    numero_secreto&&
+    record&&
+    mostrar_record  ){
 get_reiniciar.addEventListener("click", reiniciar_juego);
 get_comprobar.addEventListener("click", comprobar_num);
-mostrar_record_guardado()
+mostrar_record_guardado();
+}
+
